@@ -9,7 +9,8 @@ jobs:
   sync:
     name: Sync Notion Calendar
     runs-on: ubuntu-latest
-
+    env:
+      TZ: Asia/Seoul
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
